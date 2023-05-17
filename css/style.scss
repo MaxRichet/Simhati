@@ -1,0 +1,206 @@
+:root{
+    --white : #fff;
+    --button : #A17E60;
+    --filter : #001843;
+    --author : #D8D8D8;
+}
+
+html{
+    background: url(../images/background-accueil.png) 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    font-family: 'Cambria';
+}
+
+/* filtre bleu background */
+html::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: var(--filter);
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.59;
+}
+
+/* changement sur tous les boutons du site */
+button{
+    border: 0;
+    background: 0;
+    color: var(--white);
+}
+
+/* changement sur tous les liens du site */
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* placement logo accueil */
+#logoAccueil{
+    position: relative;
+    left: 390px;
+    width: 570px;
+    height: 251px;
+}
+
+/* placement picto panier lune */
+.basket{
+    position: relative;
+    font-size: 28px;
+    left: 1155px;
+    bottom: 130px;
+}
+
+/* espacement picto panier lune */
+#margin{
+    margin-left: 20px;
+}
+
+/* changement bouton qui suis-je */
+#button{
+    font-size: 30px;
+    background-color: var(--button);
+    padding: 10px 60px;
+    border-radius: 80px;
+    text-decoration: none;
+    position: relative;
+    left: 850px;
+    top: 25px;
+}
+
+/* classe pour cacher la nav */
+.hidden{
+    display: none;
+}
+
+/* bouton burger */
+#open{
+    font-size: 30px;
+    position: relative;
+    bottom: 130px;
+    left: 40px;
+}
+
+button:hover{
+    color: var(--filter);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+a:hover{
+    color: var(--filter);
+    transition: 0.2s;
+}
+
+/* picto réseaux sociaux */
+.media{
+    margin-bottom: 43px;
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+/* taille citation */
+#citation p{
+    font-size: 45px;
+}
+
+/* placement */
+#citation{
+    position: relative;
+    margin-left: 750px;
+    bottom: 30px;
+}
+
+/* nom auteur citation */
+#citation span{
+    font-size: 53px;
+    color: var(--author);
+    position: relative;
+    left: 170px;
+    bottom: 20px;
+}
+
+/* double quotes citation */
+#citation i{
+    color: var(--button);
+    font-size: 80px;
+    position: relative;
+    bottom: 170px;
+    right: 450px;
+    z-index: -1;
+}
+
+/* placement de la nav */
+nav{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    top: 0;
+    z-index: 2;
+}
+
+/* picto croix menu ouvert */
+#close{
+    font-size: 35px;
+    position: relative;
+    top: 90px;
+    left: 40px;
+}
+
+/* menu nav */
+nav li{
+    display: flex;
+    justify-content: center;
+    font-size: 27px;
+}
+
+/* placement logo menu ouvert */
+nav li:nth-child(1){
+    margin-bottom: 45px;
+}
+
+/* taille logo menu ouvert */
+#logoMenu{
+    width: 394px;
+    height: 173px;
+}
+
+/* ligne entre les lien du menu */
+.rectangle{
+    width  : 2px;
+    height : 75px;
+    border-radius: 10px;
+    background : var(--white);
+    position: relative;
+    left: 960px;
+    margin: 18px 0;
+}
+
+/* placement des phrases et liens en bas du menu ouvert */
+#copyright{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 18px 20px 0 20px;
+}
+
+/* fond flouté */
+#p{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
